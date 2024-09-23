@@ -1,0 +1,454 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: arial, sans-serif;
+}
+
+.hero-image {
+    height: 100vh;
+    background-image: url('./images/Acceuil.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-title {
+    font-size: 6rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-family: 'satisfy', arial, sans-serif;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+header {
+    /* height : 15vh; */
+    background-color: #EB6A25;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-family: 'satisfy', arial, sans-serif;
+    font-size: 1.8rem;
+}
+
+.upHeader {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+}
+
+.loupe {
+    position: absolute;
+    right: 1rem;
+    padding: 2rem;
+    color: black;
+}
+
+.loupe button {
+    background-color: green;
+    color: white;
+}
+
+.logo {
+
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logoNS {
+    width: auto;
+    margin-top: 50px;
+    margin-left: 40px;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.name {
+    text-align: center;
+}
+
+.name h1 {
+    display: flex;
+    text-align: center;
+    padding: 50px;
+    font-size: 40px;
+    font-style: bold;
+}
+
+.menu {
+    width: 100%;
+
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.menu li {
+    margin-right: 1rem;
+
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+}
+
+.tableauContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 15vh;
+}
+
+.tableauContent table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border: 3px solid green;
+    background-image: url(./images/Table.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tableauContent table tr td {
+    border: 2px solid white;
+    padding: 20px;
+    margin-right: 50px;
+    color: white;
+    background-color: rgba(44, 42, 42, 0.7);
+    text-align: center;
+}
+.indexTableau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 15vh;
+    padding-top: 15vh;
+}
+.indexTableau table {
+    width: 75%;
+    height: 100%;
+    border-collapse: collapse;
+    border: 3px solid green;
+    background-image: url(./images/indexTable.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.indexTableau table tr td {
+    border: 2px solid white;
+    padding: 20px;
+    margin-right: 50px;
+    color: white;
+    background-color: rgba(44, 42, 42, 0.7);
+    text-align: center;
+}
+.mainBilletterieImg img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+}
+.billetterieBanner {
+    width: 100%;
+    height: 20vh;
+    background-color: #EB6A25;
+}
+.billetterieBannerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105%;
+    color: white;
+    font-size: 30px;
+    font-family: 'satisfy', arial, sans-serif;
+}
+.billetterieBannerText a {
+    color: white;
+    text-decoration: none;
+}   
+.billetterieBannerText a:hover {
+    color: green;
+    text-decoration: underline;
+}
+.mainFaqImg img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mainContent {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.fnac {
+    text-decoration: underline;
+    color: black;
+
+}
+
+.fnac:hover {
+    color: #EB6A25;
+}
+
+.titreFaq {
+    text-align: center;
+}
+
+.textFaq {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 15vh;
+    text-align: center;
+}
+
+.textFaq hr {
+    border: none;
+    height: 2px;
+    background-color: green;
+    opacity: 1;
+}
+
+.textFaq h5 {
+    color: black;
+    font-family: 'satisfy', arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.textFaq h6 {
+    color: #EB6A25;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.lienBilletterie {
+    text-decoration: none;
+    color: black;
+}
+
+.lienBilletterie:hover {
+    color: #EB6A25;
+    text-decoration: underline;
+}
+
+.titre {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-family: 'satisfy', arial, sans-serif;
+}
+
+.partenaires img {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logoReseaux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.textBloc {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 15vh;
+}
+
+.textBloc hr {
+    border: none;
+    height: 2px;
+    background-color: green;
+    opacity: 1;
+}
+
+.textBloc h5 {
+    color: black;
+    font-family: 'satisfy', arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.textBloc h6 {
+    color: #EB6A25;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.logoReseaux svg {
+    width: 5vw;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.gauche {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.droite {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.droite a {
+    height: 5vh;
+    width: auto;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.droite a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #EB6A25;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'satisfy', arial, sans-serif;
+}
+
+footer img {
+    width: 75px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+    margin-bottom: 5px;
+}
+
+.logoFooter,
+.textFooter,
+.footerLinks {
+    flex: 1;
+}
+
+.textFooter {
+    margin-left: 30px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.footerLinks a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 18px;
+}
+
+.footerLinks a:hover {
+    color: green;
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.socialIcons {
+    margin-top: 10px;
+    display: flex;
+}
+
+.socialIcons svg {
+    margin-left: 50px;
+    margin-right: 10px;
+    height: 25px;
+    width: auto;
+}
+
+.socialIcons svg:hover {
+    color: green;
+}
