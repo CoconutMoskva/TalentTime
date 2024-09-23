@@ -47,3 +47,31 @@ document.addEventListener('DOMContentLoaded', function() {
         .bindPopup('Nation Sound Festival')
         .openPopup();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('data.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erreur lors du chargement du fichier JSON');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Afficher les Élèves
+            const elevesList = document.getElementById('eleves-list');
+            data.eleves.forEach(eleve => {
+                const li = document.createElement('li');
+                li.textContent = `${eleve.Prénom} ${eleve.Nom} - ${eleve.Âge} ans`;
+                elevesList.appendChild(li);
+            });
+
+            // Afficher les Entreprises
+            const entreprisesList = document.getElementById('entreprises-list');
+            data.entreprises.forEach(entreprise => {
+                const li = document.createElement('li');
+                li.textContent = `${entreprise.Nom_Entreprise} - ${entreprise.Lieu}`;
+                entreprisesList.appendChild(li);
+            });
+        })
+        .catch(error => console.error('Erreur:', error));
+});
