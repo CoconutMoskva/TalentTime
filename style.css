@@ -77,36 +77,31 @@ header {
     width: 20%;
     height: auto;
 }
-
-.loupe {
+.logoID svg:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    color : var(--ma-couleur-secondaire);
+}
+#logoID {
+    cursor: pointer;
+}  
+#user-options {
     position: absolute;
-    right: 1rem;
-    padding: 2rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}  
+#user-options a {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
     color: black;
 }
-
-.loupe button {
-    background-color: var(--ma-couleur-secondaire);
-    color: white;
-}
-
-.logo {
-
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.logoNS {
-    width: auto;
-    margin-top: 50px;
-    margin-left: 40px;
-    height: 15vh;
-    display: flex;
-    justify-content: flex-start;
-}
-
+#user-options a:hover {
+    background-color: #f0f0f0;
+}  
 .name {
     text-align: center;
 }
@@ -134,13 +129,13 @@ header {
 
 .menu li {
     margin-right: 1rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 .menu a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
 
 }
 

@@ -43,12 +43,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }).addTo(map);
 
     
-    L.marker([43.6112, 3.8708]).addTo(map)
-        .bindPopup('Nation Sound Festival')
+    L.marker([43.601723, 3.910771]).addTo(map)
+        .bindPopup('<strong>EPSI Montpellier <br> 349 Rue de la Cavalade <br> 34000 Montpellier <br> Tél. : 04 67 04 20 01 <br> <u>info@montpellier-epsi.fr</u></strong>')
         .openPopup();
 });
-
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
+    const logoID = document.getElementById('logoID');
+    const userOptions = document.getElementById('user-options');
+  
+    logoID.addEventListener('click', function(e) {
+      e.stopPropagation();
+      userOptions.style.display = userOptions.style.display === 'none' ? 'block' : 'none';
+    });
+  
+    document.addEventListener('click', function() {
+      userOptions.style.display = 'none';
+    });
+  
+    userOptions.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  });
+  
+  document.addEventListener('DOMContentLoaded', () => {
     fetch('data.json')
         .then(response => {
             if (!response.ok) {
