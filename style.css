@@ -66,15 +66,16 @@ header {
 .logoID {
     position: absolute;
     top: 25px;
-    right: 25px;
+    right: 50px;
     max-width: 100%;
-    width: 10%;
+    width: 15%;
     height: auto;
     margin: 10px;
 }
 .logoID svg {
     width: 20%;
     height: auto;
+    float: right;
 }
 .logoID svg:hover {
     transform: scale(1.1);
@@ -87,13 +88,19 @@ header {
 #user-options {
     position: absolute;
     top: 50%;
-    left: 83%;
+    left: 90%;
     background-color: white;
     border: 1px solid #ccc;
     padding: 5px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}  
+} 
+#user-options:hover {
+    background-color: var(--ma-couleur-secondaire);
+    box-shadow: 0 2px 5px rgba(249,208,82,0.2s);
+}
+#user-options a:hover {
+    background-color: var(--ma-couleur-secondaire);
+} 
 #user-options a {
     display: block;
     padding: 2px 0;
@@ -101,14 +108,9 @@ header {
     color: black;
     font-size: 1.2rem;
 }
-#user-options a:hover {
-    background-color: #f0f0f0;
-}  
 .name {
-    text-align: center;
-    
+    text-align: center;    
 }
-
 .name h1 {
     display: flex;
     text-align: center;
@@ -117,12 +119,9 @@ header {
     font-style: bold;
     font-family: 'Satisfy', arial, sans-serif;
 }
-
 .menu {
     width: 100%;
-
 }
-
 .menu ul {
     display: flex;
     justify-content: center;
@@ -153,12 +152,16 @@ header {
 main {
     background-color: white;
 }
-
+.titreTableau {
+    background: rgb(218,71,89);
+    padding : 10px;
+    height : 50px;
+}
 .tableauContent {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 100vh;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-bottom: 15vh;
@@ -168,7 +171,6 @@ main {
     width: 100%;
     height: 100%;
     border-collapse: collapse;
-    background-color: var(--ma-couleur-secondaire);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -178,9 +180,89 @@ main {
     border: 2px solid black;
     padding: 20px;
     margin-right: 50px;
-    color: black;
+    color: var(--ma-couleur-primaire);
     font-size: 1.3rem;
     text-align: center;
+}
+.bloc1 {
+    background-color: var(--ma-couleur-secondaire);
+    color :var(--ma-couleur-primaire);
+    padding : 5vh 20vw;
+    text-align: center;
+}
+.containerBlocs {
+    display: flex;
+    justify-content: space-between;
+    gap: 75px; 
+    padding: 5vw;
+    background-image: url(./images/blocEntreprise.jpg);
+}
+.bloc {
+    flex: 1;
+    padding: 20px;
+    color: white;
+}
+
+#blocEtudiant {
+    background-color: rgb(218,71,89);
+}
+
+#blocEntreprise {
+    background-color: rgb(55,183,213);
+}
+.blocFonctionnalites {
+    background-color: white;
+    color :var(--ma-couleur-primaire);
+    margin-top: 50px;
+    padding-right: 20vw;
+    padding-left : 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blocFonctionnalitesContainer {
+    display: flex;
+    justify-content: space-between;
+    gap : 2%;
+    padding: 1vh 5vw;    
+}
+.blocFonctionnalitesContainer h3 {
+    text-decoration: underline;
+}
+.reservation {
+    margin-bottom: 50px;
+    background-color: rgb(147,91,158);
+    padding: 2%;
+    color : white;
+}
+.informations {
+    margin-bottom: 50px;
+    padding: 2%;
+    background-color: var(--ma-couleur-primaire);
+    color : white;
+}
+.profils {
+    margin-bottom: 50px;
+    padding: 2%;
+    background-color: rgb(49, 15, 55);
+    color : white;
+}
+.blocInscription {
+    padding: 2%;
+    background-color: rgb(218,71,89);
+    color : white;
+    text-align: center;
+    padding: 5vh 20vw;
+}
+.blocInscription a {
+    color: white;
+    text-decoration: underline;
+    font-family: 'Monserrat', arial, sans-serif;
+    font-size: 1.4rem;
+}
+.blocInscription a:hover {
+    color: var(--ma-couleur-secondaire);
+    text-decoration: underline;
 }
 .mainBilletterieImg img {
     width: 100%;
@@ -210,9 +292,14 @@ main {
     color: var(--ma-couleur-secondaire);
     text-decoration: underline;
 }
+.blocFonctionnalites {
+    display: flex;
+    justify-content: space-between;
+    gap : 20px;
+}
 .carte {
-    padding-top: 15vh;
-    padding-bottom: 15vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 .mainFaqImg img {
     width: 100%;
