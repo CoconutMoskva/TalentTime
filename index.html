@@ -15,10 +15,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
     </style>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="icon" type="image/x-icon" href="./images/logo_epsi.ico">
-    
-    
 </head>
 
 <body>
@@ -42,28 +44,64 @@
         <div class="menuBurger">
             <!--Menu burger qui affiche tous les onglets-->
         </div>
-          <div class="logoID">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+        <div class="logoID" id="user-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
             </svg>
-          </div>
-          <div id="user-options" style="display: none;">
-            <a href="etudiant.html">Étudiant</a>
-            <a href="entreprise.html">Entreprise</a>
-          </div>
+        </div>
+        <div id="user-options" style="display: none;">
+            <a href="etudiant.html">Espace étudiant</a>
+            <a href="entreprise.html">Espace entreprise</a>
+        </div>
     </header>
     <main>
-        <div class="mainContent">            
-            <div class="billetterieBanner">
-                <div class="billetterieBannerText">
-                    <a href="https://monparcours.epsi.fr/contact/?campus=Montpellier&Origine_Tracking=ORGANIC_google&utm_content=&utm_campaign=&utm_source=google&utm_medium=organic" target="_blank">Contact</a>
-                </div>
+        <div class="mainContent">
+            <h3 class="titre">Job Datind du 25/07/2024</h3>
+        </div>
+        <div class="tableauContent">
+            <table>
+                <tr>
+                    <td>Entreprises</td>
+                    <td>Horaires</td>
+                    <td>Places</td>
+                    <td>Salles</td>
+                    <td>Durée de l'entretien</td>
+                </tr>
+                <tr>
+                    <td>Septeo</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Capgemini</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Teads</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="billetterieBanner">
+            <div class="billetterieBannerText">
+                <a href="https://monparcours.epsi.fr/contact/?campus=Montpellier&Origine_Tracking=ORGANIC_google&utm_content=&utm_campaign=&utm_source=google&utm_medium=organic" target="_blank">Posez vos questions !</a>
             </div>
-            <div class="carte">
-                <div id="map" style="height: 400px;">
-                </div>
+        </div>
+        <div class="carte">
+            <div id="map" style="height: 400px;">
             </div>
+        </div>
         </div>
     </main>
     <footer>
@@ -74,8 +112,8 @@
             <div class="footerLinks">
                 <div class="links">
                     <a href="./faq.html">FAQ</a>
-                    <a href="./partenaires.html">Partenaires</a>
-                    <a href="./socialMedia.html">CGV</a>
+                    <a href="X">Partenaires</a>
+                    <a href="X">CGV</a>
                 </div>
                 <div class="socialIcons">
                     <a href="https://www.facebook.com" target="_blank">

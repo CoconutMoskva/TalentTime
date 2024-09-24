@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
         .openPopup();
 });
 document.addEventListener('DOMContentLoaded', function() {
-    const logoID = document.getElementById('logoID');
+    const userMenu = document.getElementById('user-menu');
     const userOptions = document.getElementById('user-options');
   
-    logoID.addEventListener('click', function(e) {
+    userMenu.addEventListener('click', function(e) {
       e.stopPropagation();
       userOptions.style.display = userOptions.style.display === 'none' ? 'block' : 'none';
     });
