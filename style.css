@@ -303,7 +303,7 @@ main {
 }
 .mainFaqImg img {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     object-fit: cover;
     object-position: center;
 }
@@ -312,17 +312,6 @@ main {
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
-
-.fnac {
-    text-decoration: underline;
-    color: black;
-
-}
-
-.fnac:hover {
-    color: var(--ma-couleur-primaire);
-}
-
 .titreFaq {
     text-align: center;
 }
@@ -333,7 +322,9 @@ main {
     padding-bottom: 15vh;
     text-align: center;
 }
-
+.textFaq p {
+    color : var(--ma-couleur-primaire);
+}
 .textFaq hr {
     border: none;
     height: 2px;
@@ -342,8 +333,8 @@ main {
 }
 
 .textFaq h5 {
-    color: black;
-    font-family: 'satisfy', arial, sans-serif;
+    color: var(--ma-couleur-primaire);
+    font-family: 'Montserrat', arial, sans-serif;
     font-size: 30px;
     margin-bottom: 20px;
     margin-top: 50px;
@@ -355,12 +346,12 @@ main {
     margin-top: 30px;
 }
 
-.lienBilletterie {
+.lienContact {
     text-decoration: none;
-    color: black;
+    color: var(--ma-couleur-primaire);
 }
 
-.lienBilletterie:hover {
+.lienContact:hover {
     color: var(--ma-couleur-primaire);
     text-decoration: underline;
 }
@@ -370,14 +361,19 @@ main {
     font-size: 30px;
     margin-bottom: 20px;
     text-decoration: underline;
+    color: var(--ma-couleur-primaire);
 }
 
-.partenaires img {
-    margin-top: 50px;
-    width: 100%;
-    height: auto;
+.connexion {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh 5vw;
+}
+.connexionContainer {
+    display: flex;
+    align-items: center;
+    gap : 50%;
 }
 
 .logoReseaux {
