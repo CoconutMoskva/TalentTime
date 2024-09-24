@@ -66,7 +66,7 @@ header {
 .logoID {
     position: absolute;
     top: 25px;
-    right: 30px;
+    right: 50px;
     max-width: 100%;
     width: 15%;
     height: auto;
@@ -88,7 +88,7 @@ header {
 #user-options {
     position: absolute;
     top: 50%;
-    left: 80%;
+    left: 90%;
     background-color: white;
     border: 1px solid #ccc;
     padding: 5px;
