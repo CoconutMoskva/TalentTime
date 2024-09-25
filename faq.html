@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Accueil</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./style.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-        </style>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-        <link rel="icon" type="image/x-icon" href="./images/logo_epsi.ico">
-    </head>
-    
-    <body>
-        <div class="hero-image">
-            <h1 class="hero-title">Talent Time</h1>
-            <div class="scroll-down">&#9660;</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="icon" type="image/x-icon" href="./images/logo_epsi.ico">
+</head>
+
+<body>
+    <header>
+        <div class="upHeader">
+            <div class="epsiHeader"></div>
+                <img src="./images/logoEPSIheader.png" alt="EPSI Logo" class="epsiLogo">
+                <span class="epsiText">epsi</span>
+            </div>
+            <div class="name">
+                <h1>Talent Time</h1>
+            </div>
         </div>
-        <header>
-            <div class="upHeader">
-                <div class="name">
-                    <h1>Talent Time</h1>
-                </div>
-            </div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="apprenant.html">Apprenants</a></li>
-                    <li><a href="entreprise.html">Entreprises</a></li>
-                </ul>
-            </nav>
-            </div>
-            <div class="logoID" id="user-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                    <path fill-rule="evenodd"
-                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                </svg>
-            </div>
-            <div id="user-options" style="display: none;">
-                <a href="connexion.html">Mon compte</a>
-            </div>
-        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apprenant.html">Apprenants</a></li>
+                <li><a href="entreprise.html">Entreprises</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="logoID" id="user-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+            </svg>
+        </div>
+        <div id="user-options" style="display: none;">
+            <a href="connexion.html">Mon compte</a>
+        </div>
+    </header>
     <main class="main">
         <div class="mainFaqImg">
             <img src="./images/FAQ.jpg" alt="concert avec des spectateurs">
@@ -66,42 +67,48 @@
             <div class="textFaq">
                 <h5 class="titreFaq">Les 10 questions les plus fréquentes</h5>
                 <hr>
-                <h6>1. Quand et où se déroule le festival ?</h6>
-                <p>Le festival Nation Sound se déroule du 28 juin au 30 juin inclus à Montpellier dans le parc du Pérou,
-                    situé Rue de la Blottière, en face de l'Arc de Triomphe.</p>
-                <h6>2. Comment puis-je acheter des billets pour le festival ?</h6>
-                <p>Vous pouvez acheter vos billets en ligne via notre page <a href="./billetterie.html"
-                        class="lienBilletterie">Billetterie</a>. Les billets sont également disponibles dans certains
-                    points de vente partenaires, listés sur notre site.
-                </p>
-                <h6>3. Quels sont les modes de paiement acceptés pour l'achat des billets ?</h6>
-                <p>Nous acceptons les cartes de crédit (Visa, MasterCard, etc.), PayPal, et les paiements via Apple Pay
-                    et Google Pay.</p>
-                <h6>4. Est-ce qu’il y a des options de camping disponibles ?</h6>
-                <p>Non, le festival se déroule sur 3 jours dans un parc publique. Il ne dispose d'aucun emplacements
-                    pour camper.</p>
-                <h6>5. Y a-t-il des restrictions d'âge pour assister au festival ?</h6>
-                <p>Le festival est ouvert à tous les âges, mais les mineurs de moins de 16 ans doivent être accompagnés
-                    d'un adulte. Certains événements spécifiques peuvent être réservés aux plus de 18 ans.</p>
-                <h6>6. Puis-je entrer et sortir du festival pendant la journée ?</h6>
-                <p>Les entrées et sorties multiples sont autorisées pour les détenteurs de pass multi-jours. Cependant,
-                    pour des raisons de sécurité, une vérification supplémentaire peut être effectuée à chaque entrée.
-                </p>
-                <h6>7. Quels sont les objets interdits sur le site du festival ?</h6>
-                <p>Les objets suivants sont interdits : bouteilles en verre, armes de toute sorte, substances illégales,
-                    drones, parapluies et animaux de compagnie (sauf animaux d'assistance).</p>
-                <h6>8. Comment se rendre au festival ?</h6>
-                <p>Vous pouvez accéder au festival en voiture, en transport en commun ou en utilisant notre service de
-                    navette disponible depuis plusieurs points de la ville.</p>
-                <h6>9. Y aura-t-il de la nourriture et des boissons disponibles sur place ?</h6>
-                <p>Oui, nous aurons une variété de stands de nourriture et de boissons, incluant des options
-                    végétariennes, végétaliennes, et sans gluten. Des bars seront également disponibles pour les
-                    boissons alcoolisées.</p>
-                <h6>10. Le festival est-il accessible aux personnes à mobilité réduite ?</h6>
-                <p>Oui, le site du festival est entièrement accessible aux personnes à mobilité réduite. Des zones
-                    spécifiques sont prévues pour faciliter l'accès et des toilettes adaptées sont disponibles. Si vous
-                    avez besoin d'une assistance particulière, veuillez nous contacter à l'avance.</p>
-                <h6>Si vous avez d'autres questions, n'hésitez pas à nous contacter !</h6>
+                <h6>1. Qu'est-ce que la plateforme Job Dating EPSI Montpellier ?</h6>
+                    <p>La plateforme Job Dating EPSI Montpellier est un outil conçu pour faciliter les rencontres entre les
+                    étudiants de l’EPSI et les entreprises lors des sessions de Job Dating. Les étudiants peuvent
+                    consulter les entreprises présentes, réserver des créneaux d’entretien, et les entreprises peuvent
+                    accéder aux profils des candidats et planifier leurs entretiens.</p>
+                <h6>2. Comment s'inscrire sur la plateforme en tant qu'étudiant ?</h6>
+                    <p>Pour vous inscrire, rendez-vous sur la page d’inscription, complétez vos informations personnelles,
+                    et téléchargez votre CV. Vous aurez ensuite accès à la liste des entreprises participantes et aux
+                    créneaux horaires disponibles pour réserver vos entretiens.</p>
+                <h6>3. Comment les entreprises peuvent-elles s'inscrire et participer au Job Dating ?</h6>
+                    <p>Les entreprises peuvent s'inscrire en créant un compte sur la plateforme. Une fois inscrites, elles
+                    pourront consulter les profils des candidats, accéder à leurs CV et planifier des entretiens pendant
+                    les créneaux proposés. Des informations supplémentaires sur la participation peuvent être demandées
+                    via la section <strong><a href="https://monparcours.epsi.fr/contact/?campus=Montpellier&Origine_Tracking=ORGANIC_google&utm_content=&utm_campaign=&utm_source=google&utm_medium=organic" class="lienContact" target="_blank">Contactez-nous</a></strong>.</p>
+                <h6>4. Comment réserver un créneau pour un entretien ?</h6>
+                    <p>Une fois connecté en tant qu’étudiant, vous pouvez accéder à la section <strong>Entreprises
+                    participantes</strong>. Choisissez l’entreprise qui vous intéresse, consultez les créneaux
+                    disponibles, et réservez directement en ligne. Un email de confirmation vous sera envoyé.</p>
+                <h6>5. Comment puis-je modifier ou annuler un créneau d'entretien réservé ?</h6>
+                    <p>Si vous souhaitez modifier ou annuler un créneau d’entretien, connectez-vous à votre espace
+                    personnel, rendez-vous dans la section <strong>Mes entretiens</strong>, et cliquez sur
+                    <strong>Modifier</strong> ou <strong>Annuler</strong> à côté du créneau concerné. Pensez à le faire
+                    suffisamment à l’avance par respect pour l’entreprise.</p>
+                <h6>6. Les entretiens sont-ils en présentiel ou en ligne ?</h6>
+                    <p>Cela dépend des sessions. Les entretiens peuvent se dérouler en présentiel dans les locaux de l’EPSI
+                    Montpellier ou en ligne, selon les préférences de l’entreprise et de l’étudiant. Les informations
+                    sur le format de l’entretien seront précisées au moment de la réservation du créneau.</p>
+                <h6>7. Puis-je accéder à la liste des entreprises avant de m'inscrire ?</h6>
+                    <p>Oui, une version publique de la liste des entreprises participantes sera disponible sur la page
+                    d’accueil du site. Cependant, pour voir les créneaux disponibles et réserver un entretien, il est
+                    nécessaire de créer un compte.</p>
+                <h6>8. Comment les entreprises peuvent-elles consulter les profils des candidats ?</h6>
+                    <p>Une fois leur compte créé et validé, les entreprises peuvent accéder à une base de données des
+                    étudiants inscrits. Elles peuvent consulter les informations des candidats, telles que leurs
+                    compétences, leur parcours, et télécharger leurs CV pour préparer les entretiens.</p>
+                <h6>9. Y a-t-il un coût pour participer au Job Dating en tant qu’étudiant ou entreprise ?</h6>
+                    <p>La participation au Job Dating est entièrement gratuite pour les étudiants de l’EPSI Montpellier.
+                    Pour les entreprises, les conditions de participation peuvent varier en fonction de la session.
+                    Contactez l’administration de l'EPSI pour plus d'informations sur la tarification des événements
+                    pour les entreprises.</p>
+                <h6>10. Que faire si j’ai un problème technique avec la plateforme ?</h6>
+                    <p>Si vous rencontrez des difficultés techniques, vous pouvez contacter notre support via la section <strong><a href="https://monparcours.epsi.fr/contact/?campus=Montpellier&Origine_Tracking=ORGANIC_google&utm_content=&utm_campaign=&utm_source=google&utm_medium=organic" class="lienContact" target="_blank">Contactez-nous</a></strong>. Un membre de notre équipe technique se chargera de résoudre votre problème dans les plus brefs délais.</p>
             </div>
         </div>
     </main>
