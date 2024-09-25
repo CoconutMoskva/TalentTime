@@ -43,7 +43,52 @@ document.addEventListener('DOMContentLoaded', function() {
     }).addTo(map);
 
     
-    L.marker([43.6112, 3.8708]).addTo(map)
-        .bindPopup('Nation Sound Festival')
+    L.marker([43.601723, 3.910771]).addTo(map)
+        .bindPopup('<strong>EPSI Montpellier <br> 349 Rue de la Cavalade <br> 34000 Montpellier <br> Tél. : 04 67 04 20 01 <br> <u>info@montpellier-epsi.fr</u></strong>')
         .openPopup();
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const userMenu = document.getElementById('user-menu');
+    const userOptions = document.getElementById('user-options');
+  
+    userMenu.addEventListener('click', function(e) {
+      e.stopPropagation();
+      userOptions.style.display = userOptions.style.display === 'none' ? 'block' : 'none';
+    });
+  
+    document.addEventListener('click', function() {
+      userOptions.style.display = 'none';
+    });
+  
+    userOptions.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  });
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('data.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erreur lors du chargement du fichier JSON');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Afficher les Élèves
+            const elevesList = document.getElementById('eleves-list');
+            data.eleves.forEach(eleve => {
+                const li = document.createElement('li');
+                li.textContent = `${eleve.Prénom} ${eleve.Nom} - ${eleve.Âge} ans`;
+                elevesList.appendChild(li);
+            });
+
+            // Afficher les Entreprises
+            const entreprisesList = document.getElementById('entreprises-list');
+            data.entreprises.forEach(entreprise => {
+                const li = document.createElement('li');
+                li.textContent = `${entreprise.Nom_Entreprise} - ${entreprise.Lieu}`;
+                entreprisesList.appendChild(li);
+            });
+        })
+        .catch(error => console.error('Erreur:', error));
 });

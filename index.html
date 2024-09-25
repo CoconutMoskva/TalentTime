@@ -15,131 +15,224 @@
         @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
     </style>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    
+    <link rel="icon" type="image/x-icon" href="./images/logo_epsi.ico">
 </head>
 
 <body>
     <div class="hero-image">
-        <h1 class="hero-title">Nation Sound</h1>
+        <h1 class="hero-title">Talent Time</h1>
         <div class="scroll-down">&#9660;</div>
     </div>
     <header>
         <div class="upHeader">
-            <div class="logo">
-                <img src="./images/Logo_Accordissimo_note.png" alt="logo nation sound" class="logoNS">
+            <div class="epsiHeader"></div>
+                <img src="./images/logoEPSIheader.png" alt="EPSI Logo" class="epsiLogo">
+                <span class="epsiText">epsi</span>
             </div>
             <div class="name">
-                <h1>Nation Sound</h1>
+                <h1>Talent Time</h1>
             </div>
         </div>
         <nav class="menu">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="programmation.html">Programmation</a></li>
-                <li><a href="billetterie.html">Billetterie</a></li>
-                <li><a href="carte.html">Carte</a></li>
-                <li><a href="concerts.html">Concerts</a></li>
+                <li><a href="apprenant.html">Apprenants</a></li>
+                <li><a href="entreprise.html">Entreprises</a></li>
             </ul>
         </nav>
-        <div class="menuBurger">
-            <!--Menu burger qui affiche tous les onglets-->
+        </div>
+        <div class="logoID" id="user-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+            </svg>
+        </div>
+        <div id="user-options" style="display: none;">
+            <a href="connexion.html">Mon compte</a>
         </div>
     </header>
     <main>
+        <div id="bienvenue">
+            <h2>Bienvenue sur la plateforme Talent Time !</h2>
+        </div>
         <div class="mainContent">
-            <div class="indexTableau">
-                <table>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>17H00</td>
-                        <td>18H40</td>
-                        <td>19H45</td>
-                        <td>20H40</td>
-                        <td>21H45</td>
-                        <td>22H50</td>
-                        <td>00H10</td>
-                    </tr>
-                    <tr>
-                        <td>28 Juin</td>
-                        <td>The Goaties</td>
-                        <td>La Phaze</td>
-                        <td>Les Zeclopes</td>
-                        <td>Marcel & son orchestre</td>
-                        <td>Khruangbin</td>
-                        <td>Foals</td>
-                        <td>Altın Gün</td>
-                    </tr>
-                    <tr>
-                        <td>29 Juin</td>
-                        <td>Soviet Suprem</td>
-                        <td>Gomad! & Monster</td>
-                        <td>Talisco</td>
-                        <td>Pogo Car Crash Control</td>
-                        <td>Big Thief</td>
-                        <td>King Gizzard & the Lizard Wizard</td>
-                        <td>Black Pumas</td>
-                    </tr>
-                    <tr>
-                        <td>30 Juin</td>
-                        <td>Monty Picon</td>
-                        <td>Hilight Tribe</td>
-                        <td>The Sunvizors</td>
-                        <td>Opium du Peuple</td>
-                        <td>Men I Trust</td>
-                        <td>Goat</td>
-                        <td>Parcels</td>
-                    </tr>
-                </table>
+            <h3 class="titre">Job Dating du 25/07/2024</h3>
+        </div>
+        <div class="tableauContent">
+            <table>
+                <tr class="titreTableau">
+                    <td class="titreHaut">Entreprises</td>
+                    <td class="titreHaut">Horaires</td>
+                    <td class="titreHaut">Places</td>
+                    <td class="titreHaut">Salles</td>
+                    <td class="titreHaut">Durée de l'entretien</td>
+                </tr>
+                <tr>
+                    <td>Septeo</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Capgemini</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Teads</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>                    
+                </tr>
+                    <td>Acelys</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>                    
+                </tr>
+                    <td>Devensys</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>                    
+                </tr>
+                    <td>Graft Central</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>                    
+                </tr>
+                    <td>Solutek</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="bloc1">
+            <h2>Bienvenue sur la plateforme Job Dating Talent Time !</h2>
+            <p>Facilitons ensemble les rencontres entre apprenants et entreprises grâce à une interface simple et intuitive. Que vous soyez étudiant à la recherche d'opportunités ou entreprise en quête de talents, notre plateforme est là pour rendre vos échanges plus fluides et efficaces.</p>
+        </div>
+        <div class="containerBlocs">
+            <div id="blocEtudiant" class="bloc">
+                <h2>Apprenants : préparez-vous à rencontrer votre futur employeur !</h2>
+                <p>Grâce à notre outil de Job Dating, vous pouvez facilement consulter la liste des entreprises présentes, les créneaux horaires disponibles et les salles où auront lieu les entretiens. Gagnez du temps en réservant vos créneaux à l'avance et consultez les noms des entreprises pour bien vous préparer.
+                </p>
+                <ul>
+                    <li>Consultez la liste des entreprises participantes</li>
+                    <li>Réservez vos créneaux en ligne</li>
+                    <li>Accédez aux noms des entreprises et préparez vos entretiens</li>
+                </ul>
             </div>
-            <div class="billetterieBanner">
-                <div class="billetterieBannerText">
-                    <a href="./billetterie.html">Billetterie</a>
+            <div id="blocEntreprise" class="bloc">
+                <h2>Entreprises : trouvez les talents de demain</h2>
+                <p>Notre plateforme vous permet d'accéder facilement aux profils des apprenants de l'EPSI. Vous pouvez consulter leurs compétences, leurs CV, et planifier des entretiens personnalisés avec ceux qui correspondent le mieux à vos besoins.</p>
+                <ul>
+                    <li>Consultez les profils et CV des candidats</li>
+                    <li>Planifiez vos entretiens avec des apprenants qualifiés</li>
+                    <li>Accédez à des informations clés pour faciliter vos recrutements</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="blocFonctionnalites">
+            <h2>Fonctionnalités clés de la plateforme</h2>
+            <p>Que vous soyez étudiant ou employeur, notre plateforme offre des outils pensés pour vous faciliter la vie :                
+            </p>
+        </div>
+            <div class="blocFonctionnalitesContainer">
+                <div class="reservation">
+                    <h3>Réservation de créneaux</h3>
+                    <p>Les apprenants peuvent réserver leurs créneaux d'entretien et éviter les longues attentes. Les entreprises bénéficient d'une gestion claire de leurs entretiens.</p>
+                </div>
+                <div class="informations">
+                    <h3>Accès aux informations en temps réel</h3>
+                    <p>Consultez en temps réel les entreprises présentes, les salles de passage et les créneaux disponibles pour ne rien manquer du Job Dating.</p>
+                </div>
+                <div class="profils">
+                    <h3>Profils détaillés</h3>
+                    <p>Les entreprises peuvent accéder aux CV et compétences des apprenants, tandis que les candidats peuvent s'informer sur les sociétés avant leurs entretiens.</p>
                 </div>
             </div>
-            <div class="carte">
-                <div id="map" style="height: 400px;">
-                </div>
+        <div class="blocInscription">
+            <h2>Prêt à commencer ?</h2>
+            <p>Rejoignez dès aujourd'hui la plateforme et préparez-vous pour une rencontre réussie ! Que vous soyez étudiant à la recherche de votre premier emploi ou entreprise en quête de nouveaux talents, notre Job Dating est l’opportunité parfaite.</p>
+            <a href="./connexion.html" class="inscriptionButton">Connectez-vous dès maintenant !</a>
+        </div>
+        <div class="connexionBanner">
+            <div class="connexionBannerText">
+                <a href="https://monparcours.epsi.fr/contact/?campus=Montpellier&Origine_Tracking=ORGANIC_google&utm_content=&utm_campaign=&utm_source=google&utm_medium=organic" target="_blank">En cas de questions, n'hésitez pas à nous contacter !</a>
             </div>
+        </div>
+        <div class="carte">
+            <div id="map" style="height: 400px;">
+            </div>
+        </div>
         </div>
     </main>
     <footer>
         <div class="footerContainer">
-            <div class="logoBas">
-                <img src="./images/Logo_Accordissimo_note.png" alt="logo nation sound" class="logoFooter">
-            </div>
             <div class="textFooter">
-                <p>Nation Sound <br> 18 Grand Rue <br> 34000 Montpellier <br> 04.27.27.27.27</p>
+                <p>Talent Time <br> 18 Grand Rue <br> 34000 Montpellier <br> 04.27.27.27.27</p>
             </div>
             <div class="footerLinks">
                 <div class="links">
                     <a href="./faq.html">FAQ</a>
-                    <a href="./partenaires.html">Partenaires</a>
-                    <a href="./socialMedia.html">CGV</a>
+                    <a href="X">Partenaires</a>
+                    <a href="X">CGV</a>
                 </div>
                 <div class="socialIcons">
-                    <a href="https://www.facebook.com" target="_blank">
+                    <a href="https://www.facebook.com/ecole.EPSI/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                    </a><a href="https://www.facebook.com/ecole.EPSI/?locale=fr_FR" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-facebook" viewBox="0 0 16 16">
                             <path
                                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/" target="_blank">
+                    <a href="https://www.linkedin.com/school/epsi_2/" target="_blank">
+
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-linkedin" viewBox="0 0 16 16">
                             <path
                                 d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
                         </svg>
                     </a>
-                    <a href="https://www.youtube.com/" target="_blank">
+                    <a href="https://www.youtube.com/c/EPSIEcoles/" target="_blank">
+
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-youtube" viewBox="0 0 16 16">
                             <path
                                 d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
                         </svg>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="https://www.instagram.com/epsi_ecoles/" target="_blank">
+
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-instagram" viewBox="0 0 16 16">
                             <path

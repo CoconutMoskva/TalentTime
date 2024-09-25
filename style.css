@@ -1,3 +1,9 @@
+:root {
+    --ma-couleur-primaire: rgb(39,21,73); 
+    --ma-couleur-secondaire: rgb(249,208,82);
+    --ma-couleur-tertiaire: rgb(255,255,255);
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -7,12 +13,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: arial, sans-serif;
+    font-family: 'Montserrat', arial, sans-serif;
 }
 
 .hero-image {
     height: 100vh;
-    background-image: url('./images/Acceuil.jpg');
+    background-image: url('./images/universite-accueil.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -25,7 +31,7 @@ body {
     font-size: 6rem;
     color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    font-family: 'satisfy', arial, sans-serif;
+    font-family: 'Satisfy', arial, sans-serif;
 }
 
 .scroll-down {
@@ -40,16 +46,32 @@ body {
 
 header {
     /* height : 15vh; */
-    background-color: #EB6A25;
+    background-color: var(--ma-couleur-primaire);
     color: white;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     position: relative;
-    font-family: 'satisfy', arial, sans-serif;
-    font-size: 1.8rem;
+    font-family: 'MontSerrat', arial, sans-serif;
+    font-size: 1.6rem;
 }
-
+.epsiHeader {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+}
+.epsiLogo {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px;
+}
+.epsiText {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white; 
+}
 .upHeader {
     height: 15vh;
     display: flex;
@@ -58,53 +80,65 @@ header {
     position: relative;
     padding: 1rem;
 }
-
-.loupe {
+.logoID {
     position: absolute;
-    right: 1rem;
-    padding: 2rem;
+    top: 25px;
+    right: 50px;
+    max-width: 100%;
+    width: 15%;
+    height: auto;
+    margin: 10px;
+}
+.logoID svg {
+    width: 20%;
+    height: auto;
+    float: right;
+}
+.logoID svg:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    color : var(--ma-couleur-secondaire);
+}
+#user-menu {
+    cursor: pointer;
+}  
+#user-options {
+    position: absolute;
+    top: 55%;
+    left: 90%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+} 
+#user-options:hover {
+    background-color: var(--ma-couleur-secondaire);
+    box-shadow: 0 2px 5px rgba(249,208,82,0.2s);
+}
+#user-options a:hover {
+    background-color: var(--ma-couleur-secondaire);
+} 
+#user-options a {
+    display: block;
+    padding: 2px 0;
+    text-decoration: none;
     color: black;
+    font-size: 1.2rem;
 }
-
-.loupe button {
-    background-color: green;
-    color: white;
-}
-
-.logo {
-
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.logoNS {
-    width: auto;
-    margin-top: 50px;
-    margin-left: 40px;
-    height: 15vh;
-    display: flex;
-    justify-content: flex-start;
-}
-
 .name {
-    text-align: center;
+    text-align: center;    
 }
-
 .name h1 {
     display: flex;
     text-align: center;
     padding: 50px;
     font-size: 40px;
     font-style: bold;
+    font-family: 'Satisfy', arial, sans-serif;
 }
-
 .menu {
     width: 100%;
-
 }
-
 .menu ul {
     display: flex;
     justify-content: center;
@@ -115,29 +149,47 @@ header {
 
 .menu li {
     margin-right: 1rem;
-
+    transition: transform 0.2s ease;
 }
 
 .menu a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
 
 }
 
 .menu a:hover {
-    text-decoration: underline;
+    color : var(--ma-couleur-secondaire);    
 }
-
+.menu li:hover {
+    transform : scale(1.05);
+}
+#bienvenue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 2vh;
+}
 main {
     background-color: white;
 }
-
+.titreTableau {
+    background: rgb(218,71,89);
+    padding : 10px;
+    height : 50px;
+}
+.titreTableau .titreHaut {
+    color : white;
+}
 .tableauContent {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 100vh;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-bottom: 15vh;
@@ -147,99 +199,146 @@ main {
     width: 100%;
     height: 100%;
     border-collapse: collapse;
-    border: 3px solid green;
-    background-image: url(./images/Table.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .tableauContent table tr td {
-    border: 2px solid white;
+    border: 2px solid black;
     padding: 20px;
     margin-right: 50px;
-    color: white;
-    background-color: rgba(44, 42, 42, 0.7);
+    color: var(--ma-couleur-primaire);
+    font-size: 1.3rem;
     text-align: center;
 }
-.indexTableau {
+.bloc1 {
+    background-color: var(--ma-couleur-secondaire);
+    color :var(--ma-couleur-primaire);
+    padding : 5vh 20vw;
+    text-align: center;
+}
+.containerBlocs {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-bottom: 15vh;
-    padding-top: 15vh;
+    justify-content: space-between;
+    gap: 75px; 
+    padding: 5vw;
+    background-image: url(./images/blocEntreprise.jpg);
 }
-.indexTableau table {
-    width: 75%;
-    height: 100%;
-    border-collapse: collapse;
-    border: 3px solid green;
-    background-image: url(./images/indexTable.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.indexTableau table tr td {
-    border: 2px solid white;
+.bloc {
+    flex: 1;
     padding: 20px;
-    margin-right: 50px;
     color: white;
-    background-color: rgba(44, 42, 42, 0.7);
-    text-align: center;
 }
-.mainBilletterieImg img {
+
+#blocEtudiant {
+    background-color: rgb(218,71,89);
+}
+
+#blocEntreprise {
+    background-color: rgb(55,183,213);
+}
+.blocFonctionnalites {
+    background-color: white;
+    color :var(--ma-couleur-primaire);
+    margin-top: 50px;
+    padding-right: 20vw;
+    padding-left : 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blocFonctionnalitesContainer {
+    display: flex;
+    justify-content: space-between;
+    gap : 2%;
+    padding: 1vh 5vw;    
+}
+.blocFonctionnalitesContainer h3 {
+    text-decoration: underline;
+}
+.reservation {
+    margin-bottom: 50px;
+    background-color: rgb(147,91,158);
+    padding: 2%;
+    color : white;
+}
+.informations {
+    margin-bottom: 50px;
+    padding: 2%;
+    background-color: var(--ma-couleur-primaire);
+    color : white;
+}
+.profils {
+    margin-bottom: 50px;
+    padding: 2%;
+    background-color: rgb(49, 15, 55);
+    color : white;
+}
+.blocInscription {
+    padding: 2%;
+    background-color: rgb(218,71,89);
+    color : white;
+    text-align: center;
+    padding: 5vh 20vw;
+}
+.blocInscription a {
+    color: white;
+    text-decoration: underline;
+    font-family: 'Monserrat', arial, sans-serif;
+    font-size: 1.4rem;
+}
+.blocInscription a:hover {
+    color: var(--ma-couleur-secondaire);
+    text-decoration: underline;
+}
+.mainEntrepriseImg img {
     width: 100%;
     height: 30vh;
     object-fit: cover;
     object-position: center;
 }
-.billetterieBanner {
+.connexionBanner {
     width: 100%;
     height: 20vh;
-    background-color: #EB6A25;
+    background-color: var(--ma-couleur-primaire);
 }
-.billetterieBannerText {
+.connexionBannerText {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 105%;
     color: white;
-    font-size: 30px;
-    font-family: 'satisfy', arial, sans-serif;
+    font-size: 1.8rem;
 }
-.billetterieBannerText a {
+.connexionBannerText a {
     color: white;
     text-decoration: none;
+    font-family: 'Monserrat', arial, sans-serif;
 }   
-.billetterieBannerText a:hover {
-    color: green;
+.connexionBannerText a:hover {
+    color: var(--ma-couleur-secondaire);
     text-decoration: underline;
+}
+.blocFonctionnalites {
+    display: flex;
+    justify-content: space-between;
+    gap : 20px;
+}
+.carte {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 .mainFaqImg img {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     object-fit: cover;
     object-position: center;
 }
-
 .mainContent {
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
-
-.fnac {
-    text-decoration: underline;
-    color: black;
-
-}
-
-.fnac:hover {
-    color: #EB6A25;
-}
-
 .titreFaq {
     text-align: center;
 }
@@ -250,35 +349,37 @@ main {
     padding-bottom: 15vh;
     text-align: center;
 }
-
+.textFaq p {
+    color : var(--ma-couleur-primaire);
+}
 .textFaq hr {
     border: none;
     height: 2px;
-    background-color: green;
+    background-color: var(--ma-couleur-secondaire);
     opacity: 1;
 }
 
 .textFaq h5 {
-    color: black;
-    font-family: 'satisfy', arial, sans-serif;
+    color: var(--ma-couleur-primaire);
+    font-family: 'Montserrat', arial, sans-serif;
     font-size: 30px;
     margin-bottom: 20px;
     margin-top: 50px;
 }
 
 .textFaq h6 {
-    color: #EB6A25;
+    color: var(--ma-couleur-primaire);
     font-weight: bold;
     margin-top: 30px;
 }
 
-.lienBilletterie {
+.lienContact {
     text-decoration: none;
-    color: black;
+    color: var(--ma-couleur-primaire);
 }
 
-.lienBilletterie:hover {
-    color: #EB6A25;
+.lienContact:hover {
+    color: var(--ma-couleur-primaire);
     text-decoration: underline;
 }
 
@@ -287,17 +388,62 @@ main {
     font-size: 30px;
     margin-bottom: 20px;
     text-decoration: underline;
-    font-family: 'satisfy', arial, sans-serif;
+    color: var(--ma-couleur-primaire);
 }
 
-.partenaires img {
-    margin-top: 50px;
-    width: 100%;
-    height: auto;
+.connexion {
+    font-family: 'Montserrat', arial, sans-serif;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin: 5vh 5vw;
+    color: var(--ma-couleur-primaire);
+    height: 70vh;
+    text-align: center;
 }
 
+.connexion form h2 {
+    font-size: 30px;
+    margin-bottom: 10vh;
+    font-size: 2.4rem;
+}
+.connexion form h3 {
+    font-size: 30px;
+    margin-bottom: 5vh;
+}
+.connexion form input {
+    margin-bottom: 2vh;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--ma-couleur-secondaire);
+    border-radius: 5px;
+    font-size: 16px;
+}
+.connexion form input:focus {
+    outline: none;
+    border-color: var(--ma-couleur-primaire);    
+}
+#connexionButton {
+    background-color: var(--ma-couleur-secondaire);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#connexionButton:hover {
+    background-color: var(--ma-couleur-primaire);
+    color: white;
+}
+.connexion form a {
+    color: var(--ma-couleur-primaire);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.connexion form a:hover {
+    text-decoration: underline;
+}
 .logoReseaux {
     display: flex;
     justify-content: space-around;
@@ -305,28 +451,29 @@ main {
     margin-top: 20px;
 }
 
-.textBloc {
+.entreprisePresentation {
+    padding-top: 10vh;
     padding-left: 15vw;
     padding-right: 15vw;
     padding-bottom: 15vh;
 }
 
-.textBloc hr {
+.entreprisePresentation hr {
     border: none;
     height: 2px;
-    background-color: green;
+    background-color: var(--ma-couleur-secondaire);
     opacity: 1;
 }
 
-.textBloc h5 {
+.entreprisePresentation h5 {
     color: black;
     font-family: 'satisfy', arial, sans-serif;
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-.textBloc h6 {
-    color: #EB6A25;
+.entreprisePresentation h6 {
+    color: var(--ma-couleur-primaire);
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -368,11 +515,11 @@ main {
     text-decoration: underline;
 }
 footer {
-    background-color: #EB6A25;
+    background-color: var(--ma-couleur-primaire);
     color: white;
     display: flex;
     flex-direction: column;
-    font-family: 'satisfy', arial, sans-serif;
+    font-family: 'MontSerrat', arial, sans-serif;
 }
 
 footer img {
@@ -400,7 +547,8 @@ footer img {
     margin-left: 30px;
     margin-top: 10px;
     text-align: left;
-    font-size: 20px;
+    font-size: 15px;
+    
 }
 
 .footerLinks {
@@ -420,7 +568,7 @@ footer img {
 }
 
 .footerLinks a:hover {
-    color: green;
+    color: var(--ma-couleur-secondaire);
 }
 
 .links {
@@ -450,5 +598,5 @@ footer img {
 }
 
 .socialIcons svg:hover {
-    color: green;
+    color: var(--ma-couleur-secondaire);
 }
