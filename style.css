@@ -143,13 +143,13 @@ header {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    padding: 0;
 
 }
 
 .menu li {
     margin-right: 1rem;
     transition: transform 0.2s ease;
+    padding-left : 2vw;
 }
 
 .menu a {
