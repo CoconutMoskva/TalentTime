@@ -1,0 +1,132 @@
+{
+    "eleves": [
+      {
+        "ID_Élève": 1,
+        "Nom": "Dupont",
+        "Prénom": "Jean",
+        "Âge": 16,
+        "Compétences": "Python",
+        "Lieu": "Paris",
+        "Adresse_Email": "jean.dupont@mail.com"
+      },
+      {
+        "ID_Élève": 2,
+        "Nom": "Durand",
+        "Prénom": "Marie",
+        "Âge": 15,
+        "Compétences": "JavaScript",
+        "Lieu": "Lyon",
+        "Adresse_Email": "marie.durand@mail.com"
+      },
+      {
+        "ID_Élève": 3,
+        "Nom": "Martin",
+        "Prénom": "Lucas",
+        "Âge": 17,
+        "Compétences": "C++",
+        "Lieu": "Marseille",
+        "Adresse_Email": "lucas.martin@mail.com"
+      },
+      {
+        "ID_Élève": 4,
+        "Nom": "Bernard",
+        "Prénom": "Sophie",
+        "Âge": 16,
+        "Compétences": "SQL",
+        "Lieu": "Toulouse",
+        "Adresse_Email": "sophie.bernard@mail.com"
+      },
+      {
+        "ID_Élève": 5,
+        "Nom": "Petit",
+        "Prénom": "Alexandre",
+        "Âge": 15,
+        "Compétences": "JavaScript",
+        "Lieu": "Nice",
+        "Adresse_Email": "alexandre.petit@mail.com"
+      },
+      {
+        "ID_Élève": 6,
+        "Nom": "Robert",
+        "Prénom": "Chloé",
+        "Âge": 17,
+        "Compétences": "C#",
+        "Lieu": "Nantes",
+        "Adresse_Email": "chloe.robert@mail.com"
+      },
+      {
+        "ID_Élève": 7,
+        "Nom": "Richard",
+        "Prénom": "Thomas",
+        "Âge": 16,
+        "Compétences": "Swift",
+        "Lieu": "Strasbourg",
+        "Adresse_Email": "thomas.richard@mail.com"
+      },
+      {
+        "ID_Élève": 8,
+        "Nom": "Garcia",
+        "Prénom": "Laura",
+        "Âge": 15,
+        "Compétences": "Python",
+        "Lieu": "Montpellier",
+        "Adresse_Email": "laura.garcia@mail.com"
+      },
+      {
+        "ID_Élève": 9,
+        "Nom": "Lopez",
+        "Prénom": "Nicolas",
+        "Âge": 17,
+        "Compétences": "SQL",
+        "Lieu": "Bordeaux",
+        "Adresse_Email": "nicolas.lopez@mail.com"
+      },
+      {
+        "ID_Élève": 10,
+        "Nom": "Moreau",
+        "Prénom": "Emma",
+        "Âge": 16,
+        "Compétences": "C#",
+        "Lieu": "Lille",
+        "Adresse_Email": "emma.moreau@mail.com"
+      }
+    ],
+    "entreprises": [
+      {
+        "ID_Entreprise": 1,
+        "Nom_Entreprise": "TechCorp",
+        "Lieu": "Paris",
+        "Secteur": "Technologie",
+        "Adresse_Email": "contact@techcorp.com"
+      },
+      {
+        "ID_Entreprise": 2,
+        "Nom_Entreprise": "MédiaServices",
+        "Lieu": "Lyon",
+        "Secteur": "Médias",
+        "Adresse_Email": "contact@mediaservices.com"
+      },
+      {
+        "ID_Entreprise": 3,
+        "Nom_Entreprise": "BioHealth",
+        "Lieu": "Marseille",
+        "Secteur": "Santé",
+        "Adresse_Email": "info@biohealth.com"
+      },
+      {
+        "ID_Entreprise": 4,
+        "Nom_Entreprise": "EduPlus",
+        "Lieu": "Toulouse",
+        "Secteur": "Éducation",
+        "Adresse_Email": "support@eduplus.com"
+      },
+      {
+        "ID_Entreprise": 5,
+        "Nom_Entreprise": "EcoGreen",
+        "Lieu": "Nice",
+        "Secteur": "Environnement",
+        "Adresse_Email": "contact@ecogreen.com"
+      }
+    ]
+  }
+  
