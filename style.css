@@ -254,7 +254,6 @@ header {
 main {
     background-color: white;
 }
-
 .titreTableau {
     background: rgb(218, 71, 89);
     padding: 10px;
@@ -269,7 +268,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 50vh;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-bottom: 15vh;
@@ -547,6 +546,27 @@ main {
     background-color: var(--ma-couleur-primaire);
     color: white;
 }
+.btnReserver {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-size: 0.9rem;   
+}
+
+.btnReserver:hover {
+    background-color: #0056b3;
+    
+}
+
+.btnReserver:active {
+    background-color: #004085;
+}
 
 .connexion form a {
     color: var(--ma-couleur-primaire);
@@ -564,11 +584,14 @@ main {
     align-items: center;
     margin-top: 20px;
 }
-
+.reservationPresentation {
+    padding: 10vh 10vw;
+}
 .entreprisePresentation {
     padding-top: 10vh;
     padding-left: 15vw;
     padding-right: 15vw;
+    padding-bottom: 10vh;
 }
 
 .entreprisePresentation hr {
