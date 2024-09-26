@@ -91,4 +91,17 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         })
         .catch(error => console.error('Erreur:', error));
-});
+}); 
+document.addEventListener('DOMContentLoaded', function() {
+  const userIcon = document.getElementById('user-icon');
+  const userOptions = document.getElementById('user-options');
+
+  userIcon.addEventListener('click', function(event) {
+      userOptions.style.display = userOptions.style.display === 'none' ? 'block' : 'none';
+      event.stopPropagation();
+  });
+
+  document.addEventListener('click', function() {
+      userOptions.style.display = 'none';
+  });
+});  

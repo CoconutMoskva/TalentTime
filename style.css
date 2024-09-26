@@ -1,7 +1,63 @@
 :root {
-    --ma-couleur-primaire: rgb(39,21,73); 
-    --ma-couleur-secondaire: rgb(249,208,82);
-    --ma-couleur-tertiaire: rgb(255,255,255);
+    --ma-couleur-primaire: rgb(39, 21, 73);
+    --ma-couleur-secondaire: rgb(249, 208, 82);
+    --ma-couleur-tertiaire: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 480px) {
+    .logoID {
+        width: 35%;
+        right: 20px;
+        /* Augmente encore plus la largeur sur les très petits écrans */
+    }
+
+    .logoID svg {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .epsiHeader,
+    .epsiText {
+        display: none;
+    }
+
+    .logoID {
+        width: 30%;
+        right: 20px;
+    }
+
+    .logoID svg {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin-bottom: 1rem;
+    }
+
+    .logoID {
+        width: 25%;
+        /* Augmente la largeur du conteneur */
+    }
+
+    .logoID svg {
+        width: 100%;
+        /* Le SVG prend toute la largeur de son conteneur */
+        height: auto;
+        /* Maintient le ratio d'aspect */
+    }
 }
 
 html {
@@ -30,7 +86,7 @@ body {
 .hero-title {
     font-size: 6rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Satisfy', arial, sans-serif;
 }
 
@@ -55,6 +111,7 @@ header {
     font-family: 'MontSerrat', arial, sans-serif;
     font-size: 1.6rem;
 }
+
 .epsiHeader {
     display: flex;
     align-items: center;
@@ -62,16 +119,19 @@ header {
     top: 5vh;
     left: 5vw;
 }
+
 .epsiLogo {
-    width: 50px; 
+    width: 50px;
     height: auto;
     margin-right: 10px;
 }
+
 .epsiText {
     font-size: 3rem;
     font-weight: bold;
-    color: white; 
+    color: white;
 }
+
 .upHeader {
     height: 15vh;
     display: flex;
@@ -80,6 +140,7 @@ header {
     position: relative;
     padding: 1rem;
 }
+
 .logoID {
     position: absolute;
     top: 25px;
@@ -89,19 +150,24 @@ header {
     height: auto;
     margin: 10px;
 }
+
 .logoID svg {
     width: 20%;
     height: auto;
     float: right;
+    transition: all 0.3s ease;
 }
+
 .logoID svg:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
-    color : var(--ma-couleur-secondaire);
+    color: var(--ma-couleur-secondaire);
 }
+
 #user-menu {
     cursor: pointer;
-}  
+}
+
 #user-options {
     position: absolute;
     top: 55%;
@@ -110,24 +176,29 @@ header {
     border: 1px solid #ccc;
     padding: 5px;
     border-radius: 5px;
-} 
+}
+
 #user-options:hover {
     background-color: var(--ma-couleur-secondaire);
-    box-shadow: 0 2px 5px rgba(249,208,82,0.2s);
+    box-shadow: 0 2px 5px rgba(249, 208, 82, 0.2s);
 }
+
 #user-options a:hover {
     background-color: var(--ma-couleur-secondaire);
-} 
+}
+
 #user-options a {
     display: block;
     padding: 2px 0;
     text-decoration: none;
-    color: black;
+    color: var(--ma-couleur-primaire);
     font-size: 1.2rem;
 }
+
 .name {
-    text-align: center;    
+    text-align: center;
 }
+
 .name h1 {
     display: flex;
     text-align: center;
@@ -136,9 +207,11 @@ header {
     font-style: bold;
     font-family: 'Satisfy', arial, sans-serif;
 }
+
 .menu {
     width: 100%;
 }
+
 .menu ul {
     display: flex;
     justify-content: center;
@@ -149,7 +222,7 @@ header {
 .menu li {
     margin-right: 1rem;
     transition: transform 0.2s ease;
-    padding-left : 2vw;
+    padding-left: 2vw;
 }
 
 .menu a {
@@ -160,12 +233,15 @@ header {
 }
 
 .menu a:hover {
-    color : var(--ma-couleur-secondaire);    
+    color: var(--ma-couleur-secondaire);
 }
+
 .menu li:hover {
-    transform : scale(1.05);
+    transform: scale(1.05);
 }
+
 #bienvenue {
+    color: var(--ma-couleur-primaire);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,17 +250,21 @@ header {
     padding-right: 5vw;
     padding-bottom: 2vh;
 }
+
 main {
     background-color: white;
 }
+
 .titreTableau {
-    background: rgb(218,71,89);
-    padding : 10px;
-    height : 50px;
+    background: rgb(218, 71, 89);
+    padding: 10px;
+    height: 50px;
 }
+
 .titreTableau .titreHaut {
-    color : white;
+    color: white;
 }
+
 .tableauContent {
     display: flex;
     justify-content: center;
@@ -193,6 +273,7 @@ main {
     padding-left: 5vw;
     padding-right: 5vw;
     padding-bottom: 15vh;
+
 }
 
 .tableauContent table {
@@ -205,26 +286,29 @@ main {
 }
 
 .tableauContent table tr td {
-    border: 2px solid black;
+    border: 2px solid var(--ma-couleur-primaire);
     padding: 20px;
     margin-right: 50px;
     color: var(--ma-couleur-primaire);
     font-size: 1.3rem;
     text-align: center;
 }
+
 .bloc1 {
     background-color: var(--ma-couleur-secondaire);
-    color :var(--ma-couleur-primaire);
-    padding : 5vh 20vw;
+    color: var(--ma-couleur-primaire);
+    padding: 5vh 20vw;
     text-align: center;
 }
+
 .containerBlocs {
     display: flex;
     justify-content: space-between;
-    gap: 75px; 
+    gap: 75px;
     padding: 5vw;
     background-image: url(./images/blocEntreprise.jpg);
 }
+
 .bloc {
     flex: 1;
     padding: 20px;
@@ -232,77 +316,90 @@ main {
 }
 
 #blocEtudiant {
-    background-color: rgb(218,71,89);
+    background-color: rgb(218, 71, 89);
 }
 
 #blocEntreprise {
-    background-color: rgb(55,183,213);
+    background-color: rgb(55, 183, 213);
 }
+
 .blocFonctionnalites {
     background-color: white;
-    color :var(--ma-couleur-primaire);
+    color: var(--ma-couleur-primaire);
     margin-top: 50px;
     padding-right: 20vw;
-    padding-left : 20vw;
+    padding-left: 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .blocFonctionnalitesContainer {
     display: flex;
     justify-content: space-between;
-    gap : 2%;
-    padding: 1vh 5vw;    
+    gap: 2%;
+    padding: 1vh 5vw;
 }
+
 .blocFonctionnalitesContainer h3 {
     text-decoration: underline;
 }
+
 .reservation {
     margin-bottom: 50px;
-    background-color: rgb(147,91,158);
+    background-color: rgb(147, 91, 158);
     padding: 2%;
-    color : white;
+    color: white;
 }
+
 .informations {
     margin-bottom: 50px;
     padding: 2%;
     background-color: var(--ma-couleur-primaire);
-    color : white;
+    color: white;
 }
+
 .profils {
     margin-bottom: 50px;
     padding: 2%;
     background-color: rgb(49, 15, 55);
-    color : white;
+    color: white;
 }
+
 .blocInscription {
     padding: 2%;
-    background-color: rgb(218,71,89);
-    color : white;
+    background-color: rgb(218, 71, 89);
+    color: white;
     text-align: center;
     padding: 5vh 20vw;
 }
+
 .blocInscription a {
     color: white;
     text-decoration: underline;
     font-family: 'Monserrat', arial, sans-serif;
     font-size: 1.4rem;
 }
+
 .blocInscription a:hover {
     color: var(--ma-couleur-secondaire);
     text-decoration: underline;
 }
-.mainEntrepriseImg img {
+
+.mainEntrepriseImg img,
+.mainApprenantImg img {
     width: 100%;
     height: 30vh;
     object-fit: cover;
     object-position: center;
 }
+
 .connexionBanner {
     width: 100%;
     height: 20vh;
     background-color: var(--ma-couleur-primaire);
 }
+
 .connexionBannerText {
     display: flex;
     justify-content: center;
@@ -311,34 +408,41 @@ main {
     color: white;
     font-size: 1.8rem;
 }
+
 .connexionBannerText a {
     color: white;
     text-decoration: none;
     font-family: 'Monserrat', arial, sans-serif;
-}   
+}
+
 .connexionBannerText a:hover {
     color: var(--ma-couleur-secondaire);
     text-decoration: underline;
 }
+
 .blocFonctionnalites {
     display: flex;
     justify-content: space-between;
-    gap : 20px;
+    gap: 20px;
 }
+
 .carte {
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
+
 .mainFaqImg img {
     width: 100%;
     height: 40vh;
     object-fit: cover;
     object-position: center;
 }
+
 .mainContent {
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
+
 .titreFaq {
     text-align: center;
 }
@@ -349,9 +453,11 @@ main {
     padding-bottom: 15vh;
     text-align: center;
 }
+
 .textFaq p {
-    color : var(--ma-couleur-primaire);
+    color: var(--ma-couleur-primaire);
 }
+
 .textFaq hr {
     border: none;
     height: 2px;
@@ -407,10 +513,12 @@ main {
     margin-bottom: 10vh;
     font-size: 2.4rem;
 }
+
 .connexion form h3 {
     font-size: 30px;
     margin-bottom: 5vh;
 }
+
 .connexion form input {
     margin-bottom: 2vh;
     width: 100%;
@@ -419,10 +527,12 @@ main {
     border-radius: 5px;
     font-size: 16px;
 }
+
 .connexion form input:focus {
     outline: none;
-    border-color: var(--ma-couleur-primaire);    
+    border-color: var(--ma-couleur-primaire);
 }
+
 #connexionButton {
     background-color: var(--ma-couleur-secondaire);
     color: white;
@@ -432,18 +542,22 @@ main {
     cursor: pointer;
     font-size: 16px;
 }
+
 #connexionButton:hover {
     background-color: var(--ma-couleur-primaire);
     color: white;
 }
+
 .connexion form a {
     color: var(--ma-couleur-primaire);
     text-decoration: none;
     font-size: 1.2rem;
 }
+
 .connexion form a:hover {
     text-decoration: underline;
 }
+
 .logoReseaux {
     display: flex;
     justify-content: space-around;
@@ -455,7 +569,6 @@ main {
     padding-top: 10vh;
     padding-left: 15vw;
     padding-right: 15vw;
-    padding-bottom: 15vh;
 }
 
 .entreprisePresentation hr {
@@ -473,6 +586,32 @@ main {
 }
 
 .entreprisePresentation h6 {
+    color: var(--ma-couleur-primaire);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.apprenantPresentation {
+    padding-top: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.apprenantPresentation hr {
+    border: none;
+    height: 2px;
+    background-color: var(--ma-couleur-secondaire);
+    opacity: 1;
+}
+
+.apprenantPresentation h5 {
+    color: black;
+    font-family: 'satisfy', arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.apprenantPresentation h6 {
     color: var(--ma-couleur-primaire);
     font-weight: bold;
     margin-bottom: 20px;
@@ -514,6 +653,40 @@ main {
 .droite a:hover {
     text-decoration: underline;
 }
+
+.iframeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 1vh;
+}
+
+.tableauGoogle {
+    width: 67%;
+    height: 90%;
+    border: none;
+}
+
+.modification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.modification a {
+    color: var(--ma-couleur-primaire);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.modification a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
 footer {
     background-color: var(--ma-couleur-primaire);
     color: white;
@@ -548,7 +721,7 @@ footer img {
     margin-top: 10px;
     text-align: left;
     font-size: 15px;
-    
+
 }
 
 .footerLinks {
