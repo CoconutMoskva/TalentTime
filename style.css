@@ -191,7 +191,7 @@ header {
     display: block;
     padding: 2px 0;
     text-decoration: none;
-    color: black;
+    color: var(--ma-couleur-primaire);
     font-size: 1.2rem;
 }
 
