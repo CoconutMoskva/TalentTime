@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Élèves et Entreprises</title>
-    <link rel="stylesheet" href="styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Espace entreprise</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <link rel="icon" type="image/x-icon" href="./images/logo_epsi.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    </head>
 </head>
 <body>
-    <h1>Liste des Élèves</h1>
-    <ul id="eleves-list"></ul>
-
-    <h1>Liste des Entreprises</h1>
-    <ul id="entreprises-list"></ul>
-
-    <!-- Inclusion du fichier JavaScript -->
-    <script src="script.js"></script>
+  <header>
+      <div class="header-container">
+          <div class="epsi-logo">
+              <img src="./images/logoEPSIheader.png" alt="EPSI Logo" class="epsiLogo">
+              <span class="epsiText">epsi</span>
+          </div>
+          <div class="header-center">
+              <h1>Talent Time</h1>
+              <nav class="menu">
+                  <ul>
+                      <li><a href="index.html">Accueil</a></li>
+                      <li><a href="apprenant.html">Apprenants</a></li>
+                      <li><a href="entreprise.html">Entreprises</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="user-menu">
+              <svg id="user-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+              <div id="user-options" style="display: none;">
+                  <a href="connexion.html">Mon compte</a>
+              </div>
+          </div>
+      </div>
+  </header>
+    
 </body>
+<script src="script.js"></script>
 </html>
